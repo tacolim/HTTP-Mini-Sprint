@@ -11,10 +11,10 @@ class FriendsList extends Component {
     render() {
         return (
             <div>
-                <ul>
+                <ul className='friendList'>
                     {this.props.friends.map((friend, i) => {
                         return (
-                            <li key={i}>
+                            <li className='friendItem' key={i}>
                                 <p>{`Friend ${i+1}`}</p>
                                 <p>{`Name: ${friend.name}`}</p>
                                 <p>{`Age: ${friend.age}`}</p>
